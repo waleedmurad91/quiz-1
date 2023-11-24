@@ -25,10 +25,10 @@ def display_word_cloud(text):
 
 # Streamlit web application
 def main():
-    st.title("N-gram Extractor")
+    st.title("N-gram")
 
     # Input text area
-    text_input = st.text_area("Enter your text here:", "Type your text here...")
+    text_input = st.text_area("Enter your text here:")
 
     # Select n for n-grams
     n = st.slider("Select the 'n' value for n-grams:", min_value=1, max_value=5, value=2)
